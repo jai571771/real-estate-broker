@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elegance Realty | Find Your Perfect Property</title>
+    <meta name="description" content="Discover premium properties, villas, and apartments with verified listings, expert advice, and fast WhatsApp response.">
+    <!-- Google Fonts: Inter and Playfair Display for a luxurious feel -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <!-- Phosphor Icons for elegant line icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Sticky Header -->
+    <header class="header" id="header">
+        <div class="container header-content">
+            <a href="#" class="logo">
+                <i class="ph ph-buildings"></i>
+                <span>Elegance Realty</span>
+            </a>
+            <nav class="nav" id="nav">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#properties" class="nav-link">Properties</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#testimonials" class="nav-link">Reviews</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="#contact" class="btn btn-primary btn-icon">
+                    <i class="ph ph-whatsapp-logo"></i> WhatsApp Enquiry
+                </a>
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Menu">
+                    <i class="ph ph-list"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg" style="background-image: url('images/hero.png');"></div>
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1 class="hero-title">Find Your Perfect Property</h1>
+            <p class="hero-subtitle">Discover exclusive homes, luxury apartments, and prime commercial spaces tailored to your lifestyle. Verified listings. Trusted guidance.</p>
+            <div class="hero-buttons">
+                <a href="#properties" class="btn btn-primary btn-large">View Properties</a>
+                <a href="#contact" class="btn btn-outline-light btn-large btn-icon">
+                    <i class="ph ph-whatsapp-logo"></i> WhatsApp Now
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust / Value Section -->
+    <section class="trust-section">
+        <div class="container trust-grid">
+            <div class="trust-card">
+                <div class="trust-icon"><i class="ph ph-seal-check"></i></div>
+                <h3 class="trust-title">Verified Listings</h3>
+                <p class="trust-desc">Every property is physically inspected and verified for your peace of mind.</p>
+            </div>
+            <div class="trust-card">
+                <div class="trust-icon"><i class="ph ph-lightning"></i></div>
+                <h3 class="trust-title">Fast Response</h3>
+                <p class="trust-desc">Connect instantly via WhatsApp and get your questions answered within minutes.</p>
+            </div>
+            <div class="trust-card">
+                <div class="trust-icon"><i class="ph ph-map-pin"></i></div>
+                <h3 class="trust-title">Local Expertise</h3>
+                <p class="trust-desc">Deep knowledge of top neighborhoods to find the best value for your investment.</p>
+            </div>
+            <div class="trust-card">
+                <div class="trust-icon"><i class="ph ph-handshake"></i></div>
+                <h3 class="trust-title">Trusted Support</h3>
+                <p class="trust-desc">End-to-end assistance from viewing to documentation and final handover.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Properties Section -->
+    <section class="properties-section" id="properties">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Exclusive Properties</h2>
+                <p class="section-subtitle">Handpicked selection of the finest real estate available right now.</p>
+            </div>
+            
+            <div class="property-grid" id="property-grid">
+                <!-- Property Card 1 -->
+                <div class="property-card" data-id="1">
+                    <div class="property-image-wrapper">
+                        <img src="images/villa.png" alt="Modern White Villa" class="property-img">
+                        <span class="property-badge">Featured</span>
+                        <span class="property-type">Villa</span>
+                    </div>
+                    <div class="property-content">
+                        <h3 class="property-title">Sunset Palm Villa</h3>
+                        <div class="property-price">₹4.5 Cr</div>
+                        <div class="property-location"><i class="ph ph-map-pin"></i> Jubilee Hills, Hyderabad</div>
+                        <div class="property-features">
+                            <span><i class="ph ph-bed"></i> 4 Beds</span>
+                            <span><i class="ph ph-bathtub"></i> 4 Baths</span>
+                            <span><i class="ph ph-squares-four"></i> 4500 Sqft</span>
+                        </div>
+                        <button class="btn btn-outline btn-full view-details-btn">View Details</button>
+                    </div>
+                </div>
+
+                <!-- Property Card 2 -->
+                <div class="property-card" data-id="2">
+                    <div class="property-image-wrapper">
+                        <img src="images/apartment.png" alt="Luxury Apartment" class="property-img">
+                        <span class="property-badge new">New</span>
+                        <span class="property-type">3 BHK</span>
+                    </div>
+                    <div class="property-content">
+                        <h3 class="property-title">Skyline Horizon Apartment</h3>
+                        <div class="property-price">₹1.8 Cr</div>
+                        <div class="property-location"><i class="ph ph-map-pin"></i> HITEC City, Hyderabad</div>
+                        <div class="property-features">
+                            <span><i class="ph ph-bed"></i> 3 Beds</span>
+                            <span><i class="ph ph-bathtub"></i> 3 Baths</span>
+                            <span><i class="ph ph-squares-four"></i> 2200 Sqft</span>
+                        </div>
+                        <button class="btn btn-outline btn-full view-details-btn">View Details</button>
+                    </div>
+                </div>
+
+                <!-- Property Card 3 -->
+                <div class="property-card" data-id="3">
+                    <div class="property-image-wrapper">
+                        <img src="images/hero.png" alt="Premium Mansion" class="property-img">
+                        <span class="property-type">Mansion</span>
+                    </div>
+                    <div class="property-content">
+                        <h3 class="property-title">The Grand Estate</h3>
+                        <div class="property-price">₹8.2 Cr</div>
+                        <div class="property-location"><i class="ph ph-map-pin"></i> Banjara Hills, Hyderabad</div>
+                        <div class="property-features">
+                            <span><i class="ph ph-bed"></i> 6 Beds</span>
+                            <span><i class="ph ph-bathtub"></i> 7 Baths</span>
+                            <span><i class="ph ph-squares-four"></i> 8000 Sqft</span>
+                        </div>
+                        <button class="btn btn-outline btn-full view-details-btn">View Details</button>
+                    </div>
+                </div>
+                
+                 <!-- Property Card 4 -->
+                 <div class="property-card" data-id="4">
+                    <div class="property-image-wrapper">
+                        <!-- Placeholder using unsplash as we only generated 3 -->
+                        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=600&q=80" alt="Commercial Space" class="property-img">
+                        <span class="property-type">Commercial</span>
+                    </div>
+                    <div class="property-content">
+                        <h3 class="property-title">Prime Office Space</h3>
+                        <div class="property-price">₹65 L / Year</div>
+                        <div class="property-location"><i class="ph ph-map-pin"></i> Gachibowli, Hyderabad</div>
+                        <div class="property-features">
+                            <span><i class="ph ph-users"></i> 50 Seater</span>
+                            <span><i class="ph ph-car"></i> 5 Parking</span>
+                            <span><i class="ph ph-squares-four"></i> 3000 Sqft</span>
+                        </div>
+                        <button class="btn btn-outline btn-full view-details-btn">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Property Details Modal -->
+    <div class="modal-overlay" id="property-modal">
+        <div class="modal-content">
+            <button class="modal-close" id="modal-close"><i class="ph ph-x"></i></button>
+            <div class="modal-grid">
+                <div class="modal-gallery">
+                    <img src="" alt="Property Image" class="modal-main-img" id="modal-img">
+                </div>
+                <div class="modal-info">
+                    <span class="property-type" id="modal-type">Type</span>
+                    <h2 class="modal-title" id="modal-title">Property Title</h2>
+                    <div class="modal-price" id="modal-price">Price</div>
+                    <div class="property-location mb-4"><i class="ph ph-map-pin"></i> <span id="modal-location">Location</span></div>
+                    
+                    <div class="modal-features" id="modal-features">
+                        <!-- Features injected via JS -->
+                    </div>
+
+                    <div class="modal-description">
+                        <h3>About this property</h3>
+                        <p id="modal-desc">This is a premium property located in the heart of the city. Featuring modern amenities, spacious rooms, and excellent connectivity. Perfect for families looking for a luxurious lifestyle.</p>
+                    </div>
+                    
+                    <div class="modal-amenities">
+                        <h3>Amenities</h3>
+                        <ul class="amenity-list">
+                            <li><i class="ph ph-check-circle"></i> 24/7 Security</li>
+                            <li><i class="ph ph-check-circle"></i> Power Backup</li>
+                            <li><i class="ph ph-check-circle"></i> Reserved Parking</li>
+                            <li><i class="ph ph-check-circle"></i> Vastu Compliant</li>
+                        </ul>
+                    </div>
+
+                    <div class="modal-actions">
+                        <button class="btn btn-primary btn-full btn-icon mb-3 open-enquiry-btn">
+                            <i class="ph ph-envelope-simple"></i> Enquire Now
+                        </button>
+                        <a href="#" class="btn btn-outline btn-full btn-icon whatsapp-direct-btn" target="_blank" rel="noopener">
+                            <i class="ph ph-whatsapp-logo"></i> WhatsApp Agent
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="container about-grid">
+            <div class="about-image-wrapper">
+                <img src="images/broker.png" alt="Real Estate Broker" class="about-img">
+                <div class="experience-badge">
+                    <span class="exp-number">10+</span>
+                    <span class="exp-text">Years<br>Experience</span>
+                </div>
+            </div>
+            <div class="about-content">
+                <h2 class="section-title text-left">Your Trusted Real Estate Partner</h2>
+                <p class="about-text">Hi, I'm Rohan Sharma. With over a decade of experience in the premium real estate market, I specialize in helping families and investors find their perfect properties.</p>
+                <p class="about-text">My approach is simple: absolute transparency, deep local market knowledge, and a commitment to securing the best deal for my clients. Whether you're looking for a luxury apartment, a sprawling villa, or prime commercial real estate, I'm here to guide you every step of the way.</p>
+                
+                <ul class="about-list">
+                    <li><i class="ph ph-check-circle"></i> 500+ Properties Sold</li>
+                    <li><i class="ph ph-check-circle"></i> Honest & Transparent Dealings</li>
+                    <li><i class="ph ph-check-circle"></i> Exclusive Off-Market Listings</li>
+                </ul>
+
+                <a href="#contact" class="btn btn-primary mt-4">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials-section" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Client Stories</h2>
+                <p class="section-subtitle">What our happy clients say about our service.</p>
+            </div>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Found exactly what we were looking for. The process was incredibly smooth, and the WhatsApp communication made everything so much faster than waiting for emails."</p>
+                    <div class="testimonial-author">
+                        <strong>Arjun Patel</strong>
+                        <span>Bought a 3BHK in HITEC City</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Highly professional service. They understood my requirement perfectly and showed only relevant properties, saving me a lot of time. Highly recommended!"</p>
+                    <div class="testimonial-author">
+                        <strong>Priya Desai</strong>
+                        <span>Rented a Villa in Jubilee Hills</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lead Capture Section (Enquiry Form) -->
+    <section class="contact-section" id="contact">
+        <div class="container contact-grid">
+            <div class="contact-info">
+                <h2 class="section-title text-left" style="color: white;">Let's Find Your Dream Property</h2>
+                <p class="contact-subtitle">Fill out the form with your requirements, and we'll instantly connect you with the right property matches via WhatsApp.</p>
+                
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="ph ph-phone"></i></div>
+                        <div>
+                            <h4>Call Us</h4>
+                            <a href="tel:+917397417118">+91 73974 17118</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="ph ph-whatsapp-logo"></i></div>
+                        <div>
+                            <h4>WhatsApp</h4>
+                            <a href="https://wa.me/917397417118" target="_blank">+91 73974 17118</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="ph ph-map-pin"></i></div>
+                        <div>
+                            <h4>Office</h4>
+                            <address>123, Luxury Suites, Road No. 36, Jubilee Hills, Hyderabad - 500033</address>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-form-wrapper">
+                <h3 class="form-title">Send an Enquiry</h3>
+                <form id="enquiry-form" class="enquiry-form">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required placeholder="John Doe">
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">Phone Number (WhatsApp) *</label>
+                            <input type="tel" id="phone" name="phone" required placeholder="+91 73974 17118">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address (Optional)</label>
+                            <input type="email" id="email" name="email" placeholder="john@example.com">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="requirement">Property Requirement *</label>
+                        <select id="requirement" name="requirement" required>
+                            <option value="" disabled selected>Select an option</option>
+                            <option value="Buy Apartment">Buy Apartment / Flat</option>
+                            <option value="Buy Villa">Buy Villa / Independent House</option>
+                            <option value="Buy Commercial">Buy Commercial Space</option>
+                            <option value="Rent Residential">Rent Residential</option>
+                            <option value="Rent Commercial">Rent Commercial</option>
+                        </select>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="budget">Budget Range *</label>
+                            <select id="budget" name="budget" required>
+                                <option value="" disabled selected>Select budget</option>
+                                <option value="Under 1 Cr">Under ₹1 Cr</option>
+                                <option value="1 Cr - 3 Cr">₹1 Cr - ₹3 Cr</option>
+                                <option value="3 Cr - 5 Cr">₹3 Cr - ₹5 Cr</option>
+                                <option value="Above 5 Cr">Above ₹5 Cr</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="location">Preferred Location *</label>
+                            <input type="text" id="location" name="location" required placeholder="e.g. Jubilee Hills">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="3" placeholder="Any specific requirements?"></textarea>
+                    </div>
+
+                    <!-- Hidden field to pass property context if clicked from a property card -->
+                    <input type="hidden" id="property_interest" name="property_interest" value="">
+
+                    <button type="submit" class="btn btn-primary btn-full btn-submit" id="submit-btn">
+                        <span>Send Enquiry to WhatsApp</span> <i class="ph ph-paper-plane-right"></i>
+                    </button>
+                    
+                    <div id="form-success" class="form-success-msg hidden">
+                        <i class="ph-fill ph-check-circle"></i> Redirecting to WhatsApp...
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <a href="#" class="logo footer-logo">
+                    <i class="ph ph-buildings"></i>
+                    <span>Elegance Realty</span>
+                </a>
+                <p class="footer-desc">Your trusted partner in finding premium real estate. We make the property journey seamless, transparent, and rewarding.</p>
+                <div class="social-links">
+                    <a href="#"><i class="ph ph-instagram-logo"></i></a>
+                    <a href="#"><i class="ph ph-facebook-logo"></i></a>
+                    <a href="#"><i class="ph ph-linkedin-logo"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#properties">Properties</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">RERA Compliance</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 Elegance Realty. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Sticky Mobile Actions -->
+    <div class="mobile-sticky-actions">
+        <a href="tel:+917397417118" class="mobile-action-btn call-btn">
+            <i class="ph ph-phone"></i> Call
+        </a>
+        <a href="#contact" class="mobile-action-btn whatsapp-btn">
+            <i class="ph ph-whatsapp-logo"></i> WhatsApp
+        </a>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

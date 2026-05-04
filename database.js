@@ -1,13 +1,33 @@
+const fs = require('fs');
 const sqlite3 = require('sqlite3').verbose();
 const path = require('path');
 
-// Connect to the database (this will create leads.db if it doesn't exist)
-const dbPath = path.resolve(__dirname, 'leads.db');
+const isVercel = Boolean(process.env.VERCEL);
+const dbFileName = 'leads.db';
+const localDbPath = path.resolve(__dirname, dbFileName);
+const dbPath = isVercel
+    ? path.join('/tmp', dbFileName)
+    : localDbPath;
+
+if (isVercel) {
+    try {
+        if (!fs.existsSync(dbPath)) {
+            if (fs.existsSync(localDbPath)) {
+                fs.copyFileSync(localDbPath, dbPath);
+            } else {
+                fs.writeFileSync(dbPath, '');
+            }
+        }
+    } catch (err) {
+        console.error('Error preparing SQLite database on Vercel:', err.message);
+    }
+}
+
 const db = new sqlite3.Database(dbPath, (err) => {
     if (err) {
         console.error('Error connecting to database:', err.message);
     } else {
-        console.log('Connected to the SQLite database.');
+        console.log('Connected to the SQLite database.', dbPath);
     }
 });
 
